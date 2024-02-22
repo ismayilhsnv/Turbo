@@ -189,9 +189,9 @@ function App() {
 
 
   const addBasket = (item) => {
-    const target = basket.find(product => product.id == item.id)
+    const target = basket.find(product => product._id == item._id)
     if (!target) {
-      let newItem = { ...item, count: 1, totalPrice: item.price }
+      const newItem = { ...item, count: 1, totalPrice: item.price }
       setBasket([...basket, newItem])
       setHomeCounter(homeCounter + 1)
       localStorage.setItem('basket', JSON.stringify([...basket, newItem]))
@@ -211,7 +211,7 @@ function App() {
 
   const handleIncrease = (item) => {
     let updatedata = [...basket]
-    let target = updatedata.find(prod => prod.id == item.id)
+    let target = updatedata.find(prod => prod._id == item._id)
     setHomeCounter(homeCounter + 1)
     localStorage.setItem("counter", homeCounter + 1)
     target.count += 1
@@ -225,7 +225,7 @@ function App() {
 
   const handleDecrease = (item) => {
     let updatedata = [...basket];
-    let target = updatedata.find((prod) => prod.id === item.id);
+    let target = updatedata.find((prod) => prod._id === item._id);
 
     if (target.count > 1) {
       setHomeCounter(homeCounter - 1);

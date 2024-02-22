@@ -8,6 +8,123 @@
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
 
+    .tz-container { 
+        width: 970px; 
+        margin: 0 auto; 
+        padding: 0 20px;
+    } 
+    
+    .tz-d-flex { 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
+        display: flex;
+    } 
+    
+    .tz-align-center { 
+        -webkit-box-align: center; 
+        -ms-flex-align: center; 
+        align-items: center;
+    } 
+    
+    .tz-justify-between { 
+        -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+        justify-content: space-between;
+    } 
+    
+    .tz-container  { 
+        height: 100%;
+    } 
+    
+    a { 
+        color: #1e6e9d;
+    } 
+    
+    .footer__link { 
+        display: inline-block; 
+        font-size: 15px; 
+        color: #212c3a; 
+        text-decoration: none; 
+        -webkit-transition: color 0.2s ease-in-out; 
+        -o-transition: color 0.2s ease-in-out; 
+        transition: color 0.2s ease-in-out;
+    } 
+    
+    a:hover { 
+        text-decoration: none;
+    } 
+    
+    .footer__link:hover { 
+        color: #ca1016;
+    } 
+    
+    .footer__contacts-i { 
+        position: relative;
+    } 
+    
+    .footer__contacts-i--facebook { 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
+        display: flex; 
+        margin-left: 15px; 
+        padding: 5px;
+    } 
+    
+    .footer__contacts-i--instagram { 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
+        display: flex; 
+        margin-left: 15px; 
+        padding: 5px;
+    } 
+    
+    .footer__contacts-i--mail { 
+        margin-left: 25px; 
+        padding-left: 25px;
+    } 
+    
+    .footer__contacts-i--phone { 
+        margin-left: 25px; 
+        padding-left: 25px;
+    } 
+    
+    .footer__contacts-i__icon { 
+        -webkit-transition: fill 0.2s ease-in-out; 
+        -o-transition: fill 0.2s ease-in-out; 
+        transition: fill 0.2s ease-in-out;
+    } 
+    
+    .footer__contacts-i--mail svg  { 
+        position: absolute; 
+        width: 18px; 
+        height: 18px; 
+        top: 50%; 
+        left: 0; 
+        -webkit-transform: translateY(-50%); 
+        -ms-transform: translateY(-50%); 
+        transform: translateY(-50%);
+    } 
+    
+    .footer__contacts-i--mail svg  { 
+        width: 18px; 
+        height: 14px;
+    } 
+    
+    .footer__contacts-i--phone svg  { 
+        position: absolute; 
+        width: 18px; 
+        height: 18px; 
+        top: 50%; 
+        left: 0; 
+        -webkit-transform: translateY(-50%); 
+        -ms-transform: translateY(-50%); 
+        transform: translateY(-50%);
+    } 
+    
+    .footer__link--phone { 
+        display: block;
+    } 
+
     .footer__qaydalar {
         display: flex;
         height: 60px;

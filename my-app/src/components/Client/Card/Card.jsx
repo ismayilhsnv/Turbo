@@ -33,10 +33,10 @@ const Card = ({ item }) => {
         }}><i className="fa-solid fa-heart heart" style={{color: "#d60000",fontSize:"22px"}}></i></button>
         <button className='card__basket' onClick={() => {
           addBasket(item)
-        }}>Add Basket</button>
+        }}><i class="fa-solid fa-basket-shopping" style={{color: "#c8ae04"}}></i></button>
         <button className='card__detail'>
           <Link style={{ textDecoration: "none", color: "black" }} to={`/${item._id}`}>
-            <p>Go To Detail</p>
+          <i class="fa-solid fa-arrow-right" style={{color: "#0056eb"}}></i>
           </Link>
         </button>
       </div>

@@ -1,12 +1,13 @@
 import React, { useContext } from 'react'
 import MainContext from '../../../context/Context'
+import "./Basket.scss"
 
 const Basket = () => {
     const {basket, handleIncrease,handleDecrease,}=useContext(MainContext)
   
    let totalPrice=0
     return (
-    <div>
+    <div className='basket'>
       <table className="table table-striped">
   <thead>
     <tr>
