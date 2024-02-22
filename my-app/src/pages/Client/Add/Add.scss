@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+input{
+    width: 90%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 40%;
+    margin-top: 5%;
+}

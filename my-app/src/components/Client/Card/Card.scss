@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card__marka {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card__year {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+}
+
+
+.card__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .card__wishlist {
+        color: black;
+        background-color: rgb(245, 37, 37);
+        border-radius: 10px;
+        height: 30px;
+        width: 80px;
+        border: 1px solid black;
+    }
+
+    .card__wishlist:hover {
+        color: white;
+    }
+
+    .card__basket{
+        color: white;
+        background-color: rgb(29, 111, 2);
+        border-radius: 10px;
+        height: 30px;
+        width: 80px;
+        border: 1px solid black;
+    }
+
+    .card__detail {
+        width: 90px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgb(79, 141, 228);
+        padding-top: 1%;
+        border: #282c34;
+    }
+    .card__detail a p:hover{
+        color: white;
+    }
+}
+
+.heart{
+  animation: beat 2s linear infinite;
+}
+@keyframes beat{
+  0%{transform: scale(0.75);opacity: 0.5;}
+  50%{transform: scale(1); opacity: 1;}
+  100%{transform: scale(0.75); opacity: 0.5;}
+}
+
+.btnn{
+  padding: 8px 20px;
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 15px;
+  text-transform: uppercase;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.btnn::before{
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg,transparent,#00fffc,transparent);
+  transform: translateX(-100%);
+  transition: 0.6s;
+  position: absolute;
+}
+.btnn:hover{
+  background: transparent;
+  box-shadow: 0 0 20px 5px #00fffc;
+}
