@@ -34,12 +34,15 @@ const Header = () => {
                     <a className="header__div1__ul2__li">
                         <Link style={{ textDecoration: "none", color: "gray" }} to="/Basket"> <span>Basket</span></Link>
                     </a>
-                    <p style={{ color:'red',position:'absolute',right:'22.2%'}}>{homeCounter}</p>
+                    <p style={{ color:'red',position:'absolute',right:'24.5%'}}>{homeCounter}</p>
                     <p className="header__div1__ul2__p">
                         <a className="header__div1__ul2__li" href="https://turbo.az/bookmarks">
                             <Link style={{ textDecoration: "none", color: "gray" }} to="Wishlist"><i style={{ paddingLeft: "7px" }} className="fa-regular fa-heart"></i> <span>Seçilmişlər</span></Link>
                         </a>
                     </p>
+                    <a className="header__div1__ul2__li" href="">
+                        <Link style={{ textDecoration: "none", color: "gray" }} to="Contact"><p>Contact</p></Link>
+                    </a>
                     <a className="header__div1__ul2__li" href="">
                         <Link style={{ textDecoration: "none", color: "gray" }} to="Login"><p>Login</p></Link>
                     </a>

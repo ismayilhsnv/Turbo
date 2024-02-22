@@ -1,0 +1,32 @@
+.container {
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 28rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  .error-message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .button {
+    background-color: #1e40af;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition-duration: 0.5s;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #2c5282;
+  }

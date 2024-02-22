@@ -13,6 +13,7 @@ import Basket from "../pages/Client/Basket/Basket";
 import Product from "../pages/Admin/Product/Product";
 import AddProduct from "../pages/Admin/AddProduct/AddProduct";
 import EditProduct from "../pages/Admin/EditProduct/EditProduct";
+import ContactForm from "../pages/Client/Contact/Contact";
 
 const ROUTER=[{
     path:"/",
@@ -53,6 +54,10 @@ const ROUTER=[{
     {
         path:"Basket",
         element:<Basket/>
+    },
+    {
+        path:"Contact",
+        element:<ContactForm/>
     }
 ]
 },{
