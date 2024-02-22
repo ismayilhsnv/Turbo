@@ -10,6 +10,9 @@ import Register from "../pages/Register/Register";
 import SiteRoot from "../pages/SiteRoot";
 import Add from "../pages/Client/Add/Add";
 import Basket from "../pages/Client/Basket/Basket";
+import Product from "../pages/Admin/Product/Product";
+import AddProduct from "../pages/Admin/AddProduct/AddProduct";
+import EditProduct from "../pages/Admin/EditProduct/EditProduct";
 
 const ROUTER=[{
     path:"/",
@@ -56,7 +59,14 @@ const ROUTER=[{
     path:"Admin",
     element:<AdminRoot/>,
     children:[{
-
+        path:"",
+        element:<Product/>
+    },{
+        path:"AddProduct",
+        element:<AddProduct/>
+    },{
+        path:"EditProduct",
+        element:<EditProduct/>
     }]
 }]
 
