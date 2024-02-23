@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast'
 import "./Wishlist.scss"
+import { Helmet } from 'react-helmet'
 
 const Wishlist = () => {
   const [wishlist, setWishlist] = useState(localStorage.getItem("secilmis") ? JSON.parse(localStorage.getItem("secilmis")) : [])
@@ -18,6 +19,11 @@ const Wishlist = () => {
   }
   return (
     <div>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Wishlist</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <button className='btn btn-danger' onClick={removeAll}>Remove All</button>
       <div className='wishlist'>
         {

@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 import toast, { Toaster } from 'react-hot-toast';
 import MainContext from '../../../context/Context';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 
 const Add = () => {
     const { data, setData } = useContext(MainContext)
@@ -84,6 +85,11 @@ const Add = () => {
     });
     return (
         <div className='add'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Add</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <form className='form' onSubmit={formik.handleSubmit}>
                 <label htmlFor="marka">Marka</label>
                 <input

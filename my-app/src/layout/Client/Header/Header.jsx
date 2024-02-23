@@ -23,7 +23,7 @@ const Header = () => {
 
                 <ul className="header__div1__ul2">
                     <a className="header__div1__ul2__li">
-                        <Link style={{ textDecoration: "none", color: "gray" }} to="/"> <span>Home</span></Link>
+                        <Link style={{ textDecoration: "none", color: "gray" }} to=""> <span>Home</span></Link>
                     </a>
                     <a className="header__div1__ul2__li" href="https://turbo.az/help/popular_questions">
                         <Link style={{ textDecoration: "none", color: "gray" }} to="Yardim"> <span>Yardım</span></Link>
@@ -34,7 +34,7 @@ const Header = () => {
                     <a className="header__div1__ul2__li">
                         <Link style={{ textDecoration: "none", color: "gray" }} to="/Basket"> <span>Basket</span></Link>
                     </a>
-                    <p style={{ color:'red',position:'absolute',right:'24.5%'}}>{homeCounter}</p>
+                    <p style={{ color:'red',position:'absolute',right:'25%'}}>{homeCounter}</p>
                     <p className="header__div1__ul2__p">
                         <a className="header__div1__ul2__li" href="https://turbo.az/bookmarks">
                             <Link style={{ textDecoration: "none", color: "gray" }} to="Wishlist"><i style={{ paddingLeft: "7px" }} className="fa-regular fa-heart"></i> <span>Seçilmişlər</span></Link>

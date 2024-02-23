@@ -1,10 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Elan.scss"
+import { Helmet } from 'react-helmet'
 
 const Elan = () => {
     return (
         <div className='yardim'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Elan</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div class="sc-aXZVg sc-fhzFiK jARjpV bWiLtq snipcss-VIQUX style-yKX3R" id="style-yKX3R">
                 Salam! Sizə necə kömək edə bilərik?
             </div>

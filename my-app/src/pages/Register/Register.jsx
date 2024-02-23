@@ -3,24 +3,30 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom' 
+import { Helmet } from 'react-helmet'
 const Register = () => {
     const [username,setName] = useState()
     const [email,setEmail] = useState()
     const [password,setPassword] = useState()
     const navigate = useNavigate()
+    const [local,setLocal]=useState(localStorage.getItem("user")?JSON.parse(localStorage.getItem("user")):[])
 
      const handleSubmit = async (e)=>{
       e.preventDefault()  
      await axios.post('http://localhost:9090/Register',{username,email,password}).then(result=>{console.log(result)
-      navigate('/Login')
-        
-
+      navigate('/Login')   
+      localStorage.setItem("user",JSON.stringify(true))
 
     })
       .catch(err=>console.log(err))
     }
   return (
     <div className='login'>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Register</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
     <div class="body">
             <div class="containerr">
             <form onSubmit={handleSubmit}>

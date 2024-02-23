@@ -23,6 +23,7 @@ const Product = () => {
             <table className="table table-hover table-white">
                 <thead>
                     <tr>
+                        <th scope="col">ID</th>
                         <th scope="col">Marka</th>
                         <th scope='col'>Model</th>
                         <th scope="col">Price</th>

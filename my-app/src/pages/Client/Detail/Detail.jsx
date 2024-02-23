@@ -15,6 +15,7 @@ import './styles.css';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
+import { Helmet } from 'react-helmet';
 
 const Detail = () => {
   const { _id } = useParams()
@@ -28,6 +29,11 @@ const Detail = () => {
 
   return (
     <div className='detail'>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Detail</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <div className='detail__header'>
         <a href=""><p>{detail.marka}</p></a>
         <a href=""><p>{detail.categories}</p></a>

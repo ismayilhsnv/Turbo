@@ -5,6 +5,7 @@ import axios from "axios"
 import { useNavigate } from 'react-router-dom' 
 // import Swal from 'sweetalert2';
 import { Toaster, toast } from "react-hot-toast";
+import { Helmet } from 'react-helmet'
 
 const Login = () => {
     
@@ -57,6 +58,11 @@ const Login = () => {
     }
   return (
     <div className='login'>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Login</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
 <div class="body">
         <div class="containerr">
             <form onSubmit={handleSubmit}>

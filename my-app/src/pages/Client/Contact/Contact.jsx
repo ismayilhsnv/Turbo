@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import {Helmet} from "react-helmet";
 
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -33,6 +34,11 @@ const ContactForm = () => {
     };
     return (
         <>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
         <ContactMap/>
             <Formik
                 initialValues={{ firstName: "", subject: "", message: "", email: "" }}
@@ -131,7 +137,7 @@ const ContactForm = () => {
                         type="submit"
                         className="button"
                     >
-                        Submit
+                        Send
                     </button>
                 </Form>
             </Formik>

@@ -32,7 +32,7 @@ const ROUTER=[{
         element:<Yardim/>
     },
     {
-        path:"Giris",
+        path:"Giris"    ,
         element:<Giris/>
     },
     {
